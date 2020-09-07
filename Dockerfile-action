@@ -1,0 +1,2 @@
+# Container image that runs your code
+FROM mati92/helm-kubeval-action:1.0.0
