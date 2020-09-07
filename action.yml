@@ -31,7 +31,7 @@ inputs:
     required: false
 runs:
   using: 'docker'
-  image: './Dockerfile-action'
+  image: 'docker://mati92/helm-kubeval-action:0.0.2'
   env:
     CHARTS_PATH: ${{ inputs.path }}
     OUTPUT: ${{ inputs.output }}
