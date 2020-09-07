@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/sh
 
 # Exit on error.
 set -e;
@@ -21,6 +21,8 @@ run_kubeval() {
         {} +;
     rm -rf helm-output;
 }
+
+printenv
 
 helm repo add stable https://kubernetes-charts.storage.googleapis.com/;
 
